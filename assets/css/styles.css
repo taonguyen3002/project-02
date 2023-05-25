@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+/* =========common========= */
+.btn{
+    text-align: center;   
+    min-width: 118px;
+    font-weight: 600;
+    padding: 17px 16px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    background: #171100;
+    border-radius: 25px;
+
+}
+.content{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+.header .body{
+    display: flex;
+}
+.header .body ul{
+    display: flex;
+}
+.header .body .navbar{
+    margin-left: auto;
+}
+.navbar a{
+    padding: 8px 21px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #5F5B53;
+}
+.navbar a:hover,
+.navbar li.active a{
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+.navbar ul li{
+    position: relative;
+}
+.navbar li.active a::after{
+    content: "";
+    display: block;
+    left: 21px;
+    bottom: -6px;
+    position: absolute;
+    background: #171100;
+    border-radius: 1px;
+    width: 12px;
+    height: 2px;
+}
+.header{
+    position: sticky;
+    top: -28px;
+    background: #FFFCF4;
+}
+.header .body{
+
+    padding: 36px 0px 8px;
+    align-items: center;
+}
+.account{
+    margin-left: 49px;
+    padding: 11px 41px 10px;
+    border-radius: 24.5px;
+    background: #171100;
+}
+.account a{
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height:1.75;
+    text-align: center;
+    color: #FFFFFF;
+}
+/* hero */
+.hero{
+    padding-top: 65px;
+    background: #FFFCF4;
+}
+.hero .body{
+    display: flex;
+    padding-bottom: 65px;
+}
+.hero .left{
+    width: 48%;
+    position: relative;
+}
+.hero .left .image{
+    height: 685px;
+    width: 470px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.hero .left .info{  
+    padding: 24px 28px;
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 270px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px; 
+}
+.left .items + .items{
+    margin-top: 22px;
+}
+.left .items{
+    display: flex;
+}
+.left .items .icon{
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    border-radius: 50%;
+    background: #FFF9E8;
+}
+.left .items .sub-info{
+    margin-left: 16px;
+}
+.left .items .label{
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+.left .items .title{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+/* right */
+.hero .right{
+    padding: 64px 0 0 130px;
+    width: 52%;
+}
+.hero .title-right{
+    font-family: 'Sen';
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+    margin-bottom: 22px;
+}
+.right > .desc{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5F5B53;
+}
+.right .group-cta{
+    display: flex;
+    align-items: center;
+    margin: 38px 48px;
+}
+.group-cta .btn-right{
+    min-width: 180px;
+    padding: 24px 16px;
+    background: #FFB900;
+    border-radius: 32px;
+}
+.watch-video{
+    cursor: pointer;
+    display: flex;
+    margin-left: 28px;
+    align-items: center;
+    border: none;
+    background: transparent;
+}
+.watch-video .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+.group-cta span{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+    margin-left: 14px;
+}
+.right p:last-child{
+    margin-left: -28px;
+}
+.right .desc strong{
+    padding: 0 8px 0 28px ;
+    font-family: 'sen';
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    color: #171100;
+}
+/* courser */
+.courser{
+    margin-top: 135px;
+    padding: 65px 0px;
+}
+.courser .courser-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.courser .courser-top .courser-info>h2{
+    font-family: 'Sen';
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;    
+    color: #171100;
+    margin-bottom: 16px;
+}
+.courser .courser-top .courser-info p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5F5B53;
+    width: 458px;
+}
+.courser .controls{
+    display: flex;
+}
+.courser .controls>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.courser .controls>button:first-child{
+    margin-right: 18px;
+}
+.courser .controls>button{
+    border: 1px solid #FFB900;
+    color: #FFB900;
+    cursor: pointer;
+}
+.courser .controls>button:hover{
+    color:#ffffff;
+    background: #FFB900;
+}
+.courser .group-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.courser .group-card .items-card{
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 370px;
+    height: 466px;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+.courser .group-card .items-card a>img{
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 278px;
+}
+.courser .group-card .items-card .row-card>h3{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+.courser .group-card .body-card{
+    padding: 16px 22px 22px;
+}
+.courser .group-card .body-card .row-card{
+    display: flex;
+    justify-content: space-between;
+}
+.group-card .body-card .row-card .star-group{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.courser .group-card .body-card>p{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5F5B53;
+}
+.courser .group-card .body-card .foot{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.courser .group-card .body-card .foot span{
+    font-weight: 600;
+font-size: 1.8rem;
+line-height: 1.67;
+color: #171100;
+}
+.courser .group-card .body-card .foot>button{
+    border: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.courser .group-card .body-card .foot>button:hover{
+    background: #FFB900;
+    color: #fff;
+}
